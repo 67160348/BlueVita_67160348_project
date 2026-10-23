@@ -1,0 +1,152 @@
+[
+  {
+    "id": "vit-c-001",
+    "name": "Vitamin C 1000 mg",
+    "category": "วิตามิน",
+    "price": 290,
+    "description": "ผลิตภัณฑ์ตัวอย่างกลุ่มวิตามินซี โปรดตรวจสอบปริมาณและคำแนะนำบนฉลากก่อนใช้",
+    "image": "/images/vit-c-001.svg",
+    "featured": true,
+    "stock": 25
+  },
+  {
+    "id": "multi-002",
+    "name": "Daily Multivitamin",
+    "category": "วิตามิน",
+    "price": 390,
+    "description": "มัลติวิตามินตัวอย่างสำหรับผู้ใหญ่ ควรอ่านส่วนประกอบและฉลากก่อนรับประทาน",
+    "image": "/images/multi-002.svg",
+    "featured": true,
+    "stock": 18
+  },
+  {
+    "id": "vit-d3-003",
+    "name": "Vitamin D3",
+    "category": "วิตามิน",
+    "price": 320,
+    "description": "ผลิตภัณฑ์ตัวอย่างกลุ่มวิตามินดี ตรวจสอบปริมาณต่อหน่วยบริโภคบนฉลาก",
+    "image": "/images/vit-d3-003.svg",
+    "featured": true,
+    "stock": 20
+  },
+  {
+    "id": "b-complex-004",
+    "name": "Vitamin B Complex",
+    "category": "วิตามิน",
+    "price": 350,
+    "description": "ผลิตภัณฑ์ตัวอย่างกลุ่มวิตามินบีรวม โปรดใช้ตามฉลากผลิตภัณฑ์",
+    "image": "/images/b-complex-004.svg",
+    "featured": false,
+    "stock": 16
+  },
+  {
+    "id": "vit-e-005",
+    "name": "Vitamin E",
+    "category": "วิตามิน",
+    "price": 330,
+    "description": "ผลิตภัณฑ์ตัวอย่างกลุ่มวิตามินอี ควรตรวจสอบส่วนประกอบและคำเตือนก่อนใช้",
+    "image": "/images/vit-e-005.svg",
+    "featured": false,
+    "stock": 14
+  },
+  {
+    "id": "omega-006",
+    "name": "Omega-3 Fish Oil",
+    "category": "อาหารเสริม",
+    "price": 450,
+    "description": "ผลิตภัณฑ์ตัวอย่างน้ำมันปลา ตรวจสอบแหล่งที่มา สารก่อภูมิแพ้ และฉลากก่อนใช้",
+    "image": "/images/omega-006.svg",
+    "featured": true,
+    "stock": 12
+  },
+  {
+    "id": "collagen-007",
+    "name": "Collagen Peptides",
+    "category": "อาหารเสริม",
+    "price": 490,
+    "description": "ผลิตภัณฑ์คอลลาเจนตัวอย่าง ไม่ใช่ยารักษาโรค ผลลัพธ์แตกต่างกันในแต่ละบุคคล",
+    "image": "/images/collagen-007.svg",
+    "featured": true,
+    "stock": 10
+  },
+  {
+    "id": "probiotic-008",
+    "name": "Probiotic Blend",
+    "category": "อาหารเสริม",
+    "price": 520,
+    "description": "ผลิตภัณฑ์ตัวอย่างกลุ่มโพรไบโอติก ควรเก็บรักษาตามคำแนะนำบนฉลาก",
+    "image": "/images/probiotic-008.svg",
+    "featured": false,
+    "stock": 9
+  },
+  {
+    "id": "zinc-009",
+    "name": "Zinc 15 mg",
+    "category": "แร่ธาตุ",
+    "price": 280,
+    "description": "ผลิตภัณฑ์ตัวอย่างกลุ่มสังกะสี ไม่ควรรับประทานเกินปริมาณที่ระบุบนฉลาก",
+    "image": "/images/zinc-009.svg",
+    "featured": false,
+    "stock": 20
+  },
+  {
+    "id": "magnesium-010",
+    "name": "Magnesium",
+    "category": "แร่ธาตุ",
+    "price": 360,
+    "description": "ผลิตภัณฑ์ตัวอย่างกลุ่มแมกนีเซียม ควรปรึกษาผู้เชี่ยวชาญหากมีโรคประจำตัวหรือใช้ยา",
+    "image": "/images/magnesium-010.svg",
+    "featured": false,
+    "stock": 15
+  },
+  {
+    "id": "calcium-011",
+    "name": "Calcium + D3",
+    "category": "แร่ธาตุ",
+    "price": 420,
+    "description": "ผลิตภัณฑ์ตัวอย่างแคลเซียมและวิตามินดี ตรวจสอบปริมาณต่อหน่วยบริโภคก่อนใช้",
+    "image": "/images/calcium-011.svg",
+    "featured": true,
+    "stock": 13
+  },
+  {
+    "id": "lutein-012",
+    "name": "Lutein Complex",
+    "category": "อาหารเสริม",
+    "price": 460,
+    "description": "ผลิตภัณฑ์ตัวอย่างกลุ่มลูทีน อ่านส่วนประกอบและคำเตือนบนฉลากก่อนใช้",
+    "image": "/images/lutein-012.svg",
+    "featured": false,
+    "stock": 11
+  },
+  {
+    "id": "coq10-013",
+    "name": "CoQ10",
+    "category": "อาหารเสริม",
+    "price": 550,
+    "description": "ผลิตภัณฑ์ตัวอย่างกลุ่มโคเอนไซม์คิวเท็น ผู้ใช้ยาประจำควรปรึกษาเภสัชกรก่อนใช้",
+    "image": "/images/coq10-013.svg",
+    "featured": false,
+    "stock": 8
+  },
+  {
+    "id": "biotin-014",
+    "name": "Biotin",
+    "category": "วิตามิน",
+    "price": 310,
+    "description": "ผลิตภัณฑ์ตัวอย่างกลุ่มไบโอติน ควรแจ้งบุคลากรทางการแพทย์ก่อนตรวจเลือด",
+    "image": "/images/biotin-014.svg",
+    "featured": false,
+    "stock": 17
+  },
+  {
+    "id": "fiber-015",
+    "name": "Daily Fiber",
+    "category": "อาหารเสริม",
+    "price": 340,
+    "description": "ผลิตภัณฑ์ใยอาหารตัวอย่าง ดื่มน้ำให้เพียงพอและอ่านคำแนะนำบนฉลาก",
+    "image": "/images/fiber-015.svg",
+    "featured": false,
+    "stock": 14
+  }
+]
