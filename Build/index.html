@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1677d2">
+  <title>BlueVita | ดูแลตัวเองในทุกวัน</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" data-view="home"><span class="brand-mark">✚</span> BlueVita</a>
+    <nav class="main-nav">
+      <button data-view="home">หน้าแรก</button>
+      <button data-view="shop">สินค้าทั้งหมด</button>
+      <button data-view="orders">คำสั่งซื้อของฉัน</button>
+      <button data-view="rewards">คะแนนของฉัน</button>
+      <button data-view="admin" id="adminNav" hidden>จัดการร้าน</button>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-button" data-view="cart" aria-label="ตะกร้าสินค้า">🛒 <span id="cartCount">0</span></button>
+      <button class="button button-outline" data-view="account" id="accountButton">เข้าสู่ระบบ</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="homeView" class="view">
+      <div class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">YOUR DAILY WELLNESS</span>
+          <h1>เริ่มดูแลตัวเอง<br><span>ในแบบที่ใช่ทุกวัน</span></h1>
+          <p>เลือกวิตามินและผลิตภัณฑ์เสริมอาหารจากร้านค้าออนไลน์ที่ใช้งานง่าย พร้อมข้อมูลสินค้าอ่านเข้าใจง่าย</p>
+          <button class="button button-primary" data-view="shop">เลือกชมสินค้า <span>→</span></button>
+          <div class="trust-row"><span>✓ เลือกดูง่าย</span><span>✓ ตะกร้าสินค้าสะดวก</span><span>✓ เช็กคำสั่งซื้อได้</span></div>
+        </div>
+        <div class="hero-art"><div class="art-circle"></div><div class="vitamin-bottle bottle-one"><span>BV</span><b>DAILY<br>VITAMINS</b></div><div class="vitamin-bottle bottle-two"><span>✚</span><b>WELLNESS<br>CARE</b></div><div class="floating-pill"></div><div class="sparkle">✦</div></div>
+      </div>
+      <div class="section-heading"><div><span class="eyebrow">SHOP BY CATEGORY</span><h2>เลือกตามความต้องการ</h2></div><button class="text-button" data-view="shop">ดูสินค้าทั้งหมด →</button></div>
+      <div class="category-grid">
+        <button class="category-card" data-category="วิตามิน"><span class="category-icon">☀</span><b>วิตามิน</b><small>Vitamin essentials</small></button>
+        <button class="category-card" data-category="อาหารเสริม"><span class="category-icon">♡</span><b>อาหารเสริม</b><small>Everyday wellness</small></button>
+        <button class="category-card" data-category="แร่ธาตุ"><span class="category-icon">✧</span><b>แร่ธาตุ</b><small>Mineral support</small></button>
+      </div>
+      <div class="section-heading"><div><span class="eyebrow">PICKED FOR YOU</span><h2>สินค้าแนะนำ</h2></div><button class="text-button" data-view="shop">ดูทั้งหมด →</button></div>
+      <div id="featuredProducts" class="product-grid"></div>
+      <p class="disclaimer">ข้อมูลบนเว็บไซต์นี้เป็นข้อมูลทั่วไป ไม่ใช่คำแนะนำทางการแพทย์ ผลิตภัณฑ์เสริมอาหารไม่สามารถใช้แทนอาหารหลักได้ โปรดอ่านฉลากและปรึกษาผู้เชี่ยวชาญเมื่อจำเป็น</p>
+    </section>
+
+    <section id="shopView" class="view" hidden>
+      <div class="page-heading"><span class="eyebrow">THE BLUEVITA COLLECTION</span><h1>สินค้าทั้งหมด</h1><p>ค้นหาผลิตภัณฑ์ที่เหมาะกับไลฟ์สไตล์ของคุณ</p><div class="shop-note">💡 แตะการ์ดสินค้าเพื่ออ่านรายละเอียด วิธีใช้ตามฉลาก และข้อควรระวัง</div></div>
+      <div class="shop-tools"><input id="searchInput" type="search" placeholder="ค้นหาวิตามินหรืออาหารเสริม..." aria-label="ค้นหาสินค้า"><select id="categoryFilter" aria-label="เลือกหมวดหมู่"><option>ทั้งหมด</option><option>วิตามิน</option><option>อาหารเสริม</option><option>แร่ธาตุ</option></select><select id="sortFilter" aria-label="เรียงสินค้า"><option value="default">เรียงตามแนะนำ</option><option value="low">ราคาต่ำไปสูง</option><option value="high">ราคาสูงไปต่ำ</option></select></div>
+      <div id="allProducts" class="product-grid"></div>
+    </section>
+
+    <section id="detailView" class="view" hidden><div id="productDetail"></div></section>
+
+    <section id="rewardsView" class="view" hidden><div class="page-heading"><span class="eyebrow">BLUEVITA REWARDS</span><h1>คะแนนของฉัน ✦</h1><p>รีวิวสินค้าที่ซื้อและได้รับแล้ว รับ 1 คะแนนต่อ 1 รีวิวที่ผ่านเงื่อนไข</p></div><div id="rewardsContent"></div></section>
+
+    <section id="cartView" class="view" hidden><div class="page-heading"><span class="eyebrow">YOUR SELECTION</span><h1>ตะกร้าสินค้า</h1><p>ตรวจสอบรายการก่อนดำเนินการสั่งซื้อ</p></div><div id="cartContent"></div></section>
+
+    <section id="accountView" class="view" hidden>
+      <div class="auth-layout"><div class="auth-aside"><span class="brand-mark big">✚</span><h2>ดีใจที่ได้ดูแลคุณ</h2><p>เข้าสู่ระบบเพื่อสั่งซื้อสินค้าและติดตามคำสั่งซื้อได้สะดวกยิ่งขึ้น</p></div>
+        <div class="auth-panel"><div class="auth-tabs"><button id="loginTab" class="active">เข้าสู่ระบบ</button><button id="registerTab">สมัครสมาชิก</button></div>
+          <form id="authForm"><label id="nameLabel" hidden>ชื่อที่ใช้แสดง<input id="authName" autocomplete="name"></label><label>อีเมล<input id="authEmail" type="email" required autocomplete="email" placeholder="you@example.com"></label><label>รหัสผ่าน<input id="authPassword" type="password" minlength="8" required autocomplete="current-password" placeholder="อย่างน้อย 8 ตัวอักษร"></label><button class="button button-primary full" type="submit" id="authSubmit">เข้าสู่ระบบ</button><p id="authMessage" class="form-message" role="status"></p></form>
+          <div class="admin-hint">สำหรับเจ้าของร้าน: ใช้บัญชีแอดมินที่กำหนดไว้ในไฟล์ตั้งค่าเซิร์ฟเวอร์</div>
+          <button id="logoutButton" class="button button-outline full" hidden>ออกจากระบบ</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="ordersView" class="view" hidden><div class="page-heading"><span class="eyebrow">ORDER HISTORY</span><h1>คำสั่งซื้อของฉัน</h1><p>ดูสถานะรายการสั่งซื้อของคุณ</p></div><div id="ordersContent"></div></section>
+
+    <section id="adminView" class="view" hidden><div class="page-heading"><span class="eyebrow">STORE MANAGEMENT</span><h1>จัดการร้านค้า</h1><p>พื้นที่สำหรับเจ้าของร้านเท่านั้น</p></div>
+      <div class="admin-grid"><form id="productForm" class="panel"><h3>เพิ่มสินค้า</h3><label>ชื่อสินค้า<input name="name" required></label><label>หมวดหมู่<select name="category"><option>วิตามิน</option><option>อาหารเสริม</option><option>แร่ธาตุ</option></select></label><label>ราคา (บาท)<input name="price" type="number" min="0" required></label><label>จำนวนคงเหลือ<input name="stock" type="number" min="0" value="10" required></label><label>ที่อยู่รูปภาพ<input name="image" type="text" placeholder="/images/vit-c-001.svg"><small>ใส่ /images/ชื่อไฟล์.svg สำหรับรูปในโปรเจกต์ หรือวาง URL รูปภาพออนไลน์</small></label><label>รายละเอียด<textarea name="description" rows="3"></textarea></label><label class="check-label"><input name="featured" type="checkbox"> สินค้าแนะนำ</label><button class="button button-primary full" type="submit">เพิ่มสินค้า</button><p id="productMessage" class="form-message"></p></form>
+      <div class="panel"><h3>รายการสินค้า</h3><div id="adminProducts"></div><hr><h3>คำสั่งซื้อทั้งหมด</h3><div id="adminOrders"></div></div></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#" data-view="home"><span class="brand-mark">✚</span> BlueVita</a><p>ดูแลตัวเองอย่างเข้าใจ เลือกอย่างมีข้อมูล</p><small>© 2026 BlueVita Demo Store · โปรเจกต์ตัวอย่างเพื่อการศึกษา</small></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
